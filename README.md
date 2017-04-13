@@ -1,15 +1,23 @@
 # My first approach to **Neo4j**
 
 ## Files:
-	* **README.md**: this file.
-	* **config.py**: Connection URL for Neo4j
-	* **N2nd3rdDegree.py**: Webservice / Module with two routes / functions:
-		Webservice base URL: **http://127.0.0.1:3030/**
-		* Route: **/2nd3rdDegree/<int:id>** - Function: **search2nd3rdDegreeConnections(id)**
+        
+* README.md: this file.
+* config.py: Connection URL for Neo4j
+* N2nd3rdDegree.py: Webservice / Module with two routes / functions:
+
+	Webservice base URL: **http://127.0.0.1:3030/**
+
+    * Route: _/2nd3rdDegree/<int:id>_ - Function: _search2nd3rdDegreeConnections(id)_
+		
 			Returns a list of user ids of 2nd/3rd degree connections for user with id=id.
-		* Route: **/2nd3rdDegree/<int:id_1>/<int:id_2>** - Function: **check2nd3rdDegreeConnection(id_1, id_2)**
+			
+    * Route: _/2nd3rdDegree/<int:id_1>/<int:id_2>_ - Function: _check2nd3rdDegreeConnection(id_1, id_2)_
+		
 			Return true or false if two user ids are 2nd/3rd degree connections
-	* **neo4jtest.py**: Script for creating nodes / connections, drop database and call functions from N2nd4rdDegree.py:
+			
+* neo4jtest.py: Script for creating nodes / connections, drop database and call functions from N2nd4rdDegree.py:
+	
 ```
 	Use ./neo4jtest.py <COMMAND> <PARAMS>
 		List of Commands:
