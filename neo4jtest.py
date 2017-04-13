@@ -138,7 +138,7 @@ def use():
 	print "Use {} <COMMAND> <PARAMS>".format(sys.argv[0])
 	print "List of Commands:"
 	print "    MINIINIT: Create a know database for testing"
-	print "    INIT: Create a random database of 2 millions random users"
+	print "    INIT: Create a random database of random users"
 	print "        Param: Amount of users to create"
 	print "    DROP: Delete database"
 	print "        Param: Amount of users to delete"
